@@ -1,0 +1,20 @@
+<h1>Events</h1>
+
+<% if current_user %>
+	<td class="main">
+		<p>
+			Welcome back to Events.
+		</p>
+	</td>
+	<td class="sidebar round">
+    	<%= render 'shared/user_info' %>
+		<%= render 'shared/stats'%>
+    </td>
+<% else %>
+
+	<p>
+		This is the home page for the Events app
+	</p>
+
+<%= link_to "Sign up now!", signup_path, :class => "signup_button round" %>
+<% end %>

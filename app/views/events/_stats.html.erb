@@ -1,0 +1,14 @@
+<% @event %>
+<div class="stats">
+  <table summary="User stats">
+    <tr>
+      <td>
+        <a href="<%= followers_event_path(@event) %>">
+          <span id="followers" class="stat">
+            <%= pluralize(@event.followers.count, "follower") %>
+          </span>
+        </a>
+      </td>
+    </tr>
+  </table>
+</div>

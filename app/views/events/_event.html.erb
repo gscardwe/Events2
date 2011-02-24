@@ -1,0 +1,16 @@
+<tr>
+  <table class="events" summary="Events">
+	<td class="event">
+    <span class="name"><%= link_to event.name, event %></span>
+    <span class="timestamp">
+      Posted <%= time_ago_in_words(event.created_at) %> ago.
+    </span>
+  	<% if current_user?(event.user) %>
+  	<td>
+    	<%= link_to "delete", event,     :method => :delete,
+                                     	 :confirm => "You sure?",
+                                     	 :title => event.name %>
+  	</td>
+  	<% end %>
+  </table>
+</tr>

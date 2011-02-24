@@ -1,0 +1,23 @@
+<table summary="Information about followers">
+  <tr>
+    <td class="main">
+      <h1><%= @title %></h1>
+      
+      <% unless @events.empty? %>
+        <ul class="events">
+          <%= render @events %>
+        </ul>
+        <%= will_paginate @events %>
+      <% end %>
+    </td>
+    <td class="sidebar round">
+      <strong>Name</strong> <%= @event.name %><br />
+      <strong>URL</strong> <%= link_to event_path(@event), @event %><br />
+      <% unless @events.empty? %>
+        <% @events.each do |event| %>
+          <%= link_to gravatar_for(event.follower, :size => 30), event.follower.name %>
+        <% end %>
+      <% end %>
+    </td>
+  </tr>
+</table>

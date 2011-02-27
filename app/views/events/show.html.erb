@@ -14,6 +14,12 @@
   <b>Creator:</b>
   <%= @event.user_id %>
 </p>
+<p>
+  <b>Address:</b>
+  <%= @event.street %>
+  <%= @event.city %>
+  <%= @event.state %>
+</p>
 
 <%= render 'follow_form' %>
 

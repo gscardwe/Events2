@@ -10,14 +10,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110224163509) do
+ActiveRecord::Schema.define(:version => 20110227180331) do
 
   create_table "events", :force => true do |t|
     t.string   "name"
     t.string   "description"
     t.integer  "user_id"
+    t.string   "street"
+    t.string   "city"
+    t.string   "state"
+    t.float    "latitude"
+    t.float    "longitude"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "zip"
   end
 
   add_index "events", ["user_id"], :name => "index_events_on_user_id"
@@ -48,6 +54,7 @@ ActiveRecord::Schema.define(:version => 20110224163509) do
     t.string   "persistence_token"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "admin"
   end
 
 end

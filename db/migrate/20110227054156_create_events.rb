@@ -4,6 +4,11 @@ class CreateEvents < ActiveRecord::Migration
       t.string :name
       t.string :description
       t.integer :user_id
+      t.string :street
+      t.string :city
+      t.string :state
+      t.float :latitude
+      t.float :longitude
 
       t.timestamps
     end

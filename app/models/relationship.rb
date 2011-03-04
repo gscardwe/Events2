@@ -1,5 +1,6 @@
 class Relationship < ActiveRecord::Base
-  attr_accessible :followed_id
+  attr_accessible :followed_id, :image
+  mount_uploader :image, ImageUploader
   
   belongs_to :follower, :class_name => "User"
   belongs_to :followed, :class_name => "Event"

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110304191807) do
+ActiveRecord::Schema.define(:version => 20110304193719) do
 
   create_table "events", :force => true do |t|
     t.string   "name"
@@ -34,6 +34,8 @@ ActiveRecord::Schema.define(:version => 20110304191807) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "image"
+    t.float    "latitude"
+    t.float    "longitude"
   end
 
   add_index "relationships", ["followed_id"], :name => "index_relationships_on_followed_id"

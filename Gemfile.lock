@@ -33,6 +33,8 @@ GEM
     authlogic (2.1.6)
       activesupport
     builder (2.1.2)
+    carrierwave (0.5.2)
+      activesupport (~> 3.0)
     erubis (2.6.6)
       abstract (>= 1.0.0)
     geokit (1.5.0)
@@ -79,6 +81,7 @@ PLATFORMS
 DEPENDENCIES
   annotate-models
   authlogic
+  carrierwave
   geokit
   gravatar_image_tag (= 1.0.0.pre2)
   rails (= 3.0.3)

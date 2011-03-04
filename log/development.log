@@ -15188,3 +15188,44 @@ ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.
   
 
 Rendered /Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-03-04 11:14:38 -0800
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (1.7ms)
+Rendered layouts/_header.html.erb (1.9ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered pages/home.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 128ms (Views: 17.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/blueprint/screen.css" for 127.0.0.1 at 2011-03-04 11:14:38 -0800
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css"):
+  
+
+Rendered /home/will/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.7ms)
+
+
+Started GET "/stylesheets/blueprint/print.css" for 127.0.0.1 at 2011-03-04 11:14:38 -0800
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/print.css"):
+  
+
+Rendered /home/will/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/images/nps.jpg" for 127.0.0.1 at 2011-03-04 11:14:39 -0800
+
+ActionController::RoutingError (No route matches "/images/nps.jpg"):
+  
+
+Rendered /home/will/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (4.1ms)
+
+
+Started GET "/images/nps.jpg" for 127.0.0.1 at 2011-03-04 11:14:39 -0800
+
+ActionController::RoutingError (No route matches "/images/nps.jpg"):
+  
+
+Rendered /home/will/.rvm/gems/ruby-1.9.2-p0/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)

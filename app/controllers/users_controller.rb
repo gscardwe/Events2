@@ -22,7 +22,7 @@ class UsersController < ApplicationController
   end
   
   def show
-    @user = User.find(params[:id])
+    @user = current_user
     @events = @user.events.paginate(:page => params[:page])
     @title = @user.username
     
@@ -75,7 +75,7 @@ class UsersController < ApplicationController
   
   def following
     @title = "Following"
-    @user  = User.find(params[:id])
+    @user  = current_user
     @users = @user.following.paginate(:page => params[:page])
     
     respond_to do |format|

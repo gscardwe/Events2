@@ -14936,3 +14936,255 @@ ActionController::RoutingError (No route matches "/stylesheets/blueprint/print.c
   
 
 Rendered /Users/gregcardwell/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-03-04 10:56:32 -0800
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (1.1ms)
+Rendered layouts/_header.html.erb (1.6ms)
+Rendered layouts/_footer.html.erb (0.7ms)
+Rendered pages/home.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 120ms (Views: 21.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/blueprint/screen.css" for 127.0.0.1 at 2011-03-04 10:56:32 -0800
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css"):
+  
+
+Rendered /Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-03-04 10:57:59 -0800
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (1.1ms)
+Rendered layouts/_header.html.erb (1.5ms)
+Rendered layouts/_footer.html.erb (0.7ms)
+Rendered pages/home.html.erb within layouts/application (37.7ms)
+Completed 200 OK in 77ms (Views: 42.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/blueprint/screen.css" for 127.0.0.1 at 2011-03-04 10:58:00 -0800
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css"):
+  
+
+Rendered /Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-03-04 10:58:01 -0800
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered layouts/_header.html.erb (1.4ms)
+Rendered layouts/_footer.html.erb (0.7ms)
+Rendered pages/home.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 75ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/blueprint/screen.css" for 127.0.0.1 at 2011-03-04 10:58:01 -0800
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css"):
+  
+
+Rendered /Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-03-04 10:58:05 -0800
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered layouts/_header.html.erb (1.4ms)
+Rendered layouts/_footer.html.erb (0.7ms)
+Rendered pages/home.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 46ms (Views: 13.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/blueprint/screen.css" for 127.0.0.1 at 2011-03-04 10:58:05 -0800
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css"):
+  
+
+Rendered /Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-03-04 11:07:18 -0800
+  Processing by PagesController#home as HTML
+ERROR: compiling _app_views_layouts_application_html_erb___2302343449294041213_2169492960_1073162615927548995 RAISED /Users/shuchton/rails_projects/Events2/app/views/layouts/application.html.erb:17: unknown regexp options - ct
+unmatched close parenthesis: /div>
+');		 end 
+@output_buffer.safe_concat('        ');@output_buffer.append= ( yield );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('      </i
+/Users/shuchton/rails_projects/Events2/app/views/layouts/application.html.erb:18: syntax error, unexpected tIDENTIFIER, expecting ')'
+...uffer.append= ( render 'layouts/footer' );@output_buffer.saf...
+...                               ^
+/Users/shuchton/rails_projects/Events2/app/views/layouts/application.html.erb:18: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...pend= ( render 'layouts/footer' );@output_buffer.safe_concat...
+...                               ^
+/Users/shuchton/rails_projects/Events2/app/views/layouts/application.html.erb:21: unknown regexp options - bdy
+/Users/shuchton/rails_projects/Events2/app/views/layouts/application.html.erb:22: syntax error, unexpected '<'
+</html>
+ ^
+/Users/shuchton/rails_projects/Events2/app/views/layouts/application.html.erb:22: unterminated regexp meets end of file
+Function body:           def _app_views_layouts_application_html_erb___2302343449294041213_2169492960_1073162615927548995(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "layouts/application";_old_output_buffer = @output_buffer;;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.safe_concat('<!DOCTYPE html>
+<html>
+  <head>
+    <title>');@output_buffer.append= ( title );@output_buffer.safe_concat('</title>
+    ');@output_buffer.append= ( csrf_meta_tag );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    ');@output_buffer.append= ( #render 'layouts/stylesheets' );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('	');@output_buffer.append= ( javascript_include_tag :defaults );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </head>
+  <body>
+    <div class="container">
+      ');@output_buffer.append= ( render 'layouts/header' );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('      <section class="round">
+');@output_buffer.append_if_string= 		 flash.each do |key, value| 
+@output_buffer.safe_concat('			<div class="flash ');@output_buffer.append= ( key );@output_buffer.safe_concat('">');@output_buffer.append= ( value );@output_buffer.safe_concat('</div>
+');		 end 
+@output_buffer.safe_concat('        ');@output_buffer.append= ( yield );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('      </section>
+	  ');@output_buffer.append= ( render 'layouts/footer' );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('	  ');@output_buffer.append= ( debug(params) if Rails.env.development? );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('    </div>
+  </body>
+</html>
+');@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.3/lib/action_view/template.rb:255:in `module_eval'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.3/lib/action_view/template.rb:255:in `compile'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.3/lib/action_view/template.rb:134:in `block in render'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/activesupport-3.0.3/lib/active_support/notifications.rb:54:in `instrument'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.3/lib/action_view/template.rb:127:in `render'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.3/lib/action_view/render/layouts.rb:80:in `_render_layout'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.3/lib/action_view/render/rendering.rb:62:in `block in _render_template'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/activesupport-3.0.3/lib/active_support/notifications.rb:52:in `block in instrument'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/activesupport-3.0.3/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/activesupport-3.0.3/lib/active_support/notifications.rb:52:in `instrument'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.3/lib/action_view/render/rendering.rb:56:in `_render_template'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.3/lib/action_view/render/rendering.rb:26:in `render'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:114:in `_render_template'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:108:in `render_to_body'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.3/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.3/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:101:in `render_to_string'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:92:in `render'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.3/lib/action_controller/metal/rendering.rb:17:in `render'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/activesupport-3.0.3/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/Users/shuchton/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/activesupport-3.0.3/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/activerecord-3.0.3/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.3/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.3/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.3/lib/abstract_controller/base.rb:151:in `process_action'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.3/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.3/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:440:in `_run__1561328961855008482__process_action__1479555816762652967__callbacks'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:409:in `_run_process_action_callbacks'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:93:in `run_callbacks'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.3/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/activesupport-3.0.3/lib/active_support/notifications.rb:52:in `block in instrument'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/activesupport-3.0.3/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/activesupport-3.0.3/lib/active_support/notifications.rb:52:in `instrument'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.3/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.3/lib/abstract_controller/base.rb:120:in `process'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:40:in `process'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.3/lib/action_controller/metal.rb:138:in `dispatch'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.3/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.3/lib/action_controller/metal.rb:178:in `block in action'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.3/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.3/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.3/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:148:in `block in call'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:93:in `block in recognize'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:68:in `optimized_each'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:92:in `recognize'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:139:in `call'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.3/lib/action_dispatch/routing/route_set.rb:492:in `call'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.3/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.3/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/rack-1.2.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.3/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.3/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.3/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.3/lib/action_dispatch/middleware/cookies.rb:295:in `call'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/activerecord-3.0.3/lib/active_record/query_cache.rb:32:in `block in call'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/activerecord-3.0.3/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/activerecord-3.0.3/lib/active_record/query_cache.rb:12:in `cache'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/activerecord-3.0.3/lib/active_record/query_cache.rb:31:in `call'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/activerecord-3.0.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:353:in `call'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.3/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:415:in `_run_call_callbacks'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.3/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/rack-1.2.1/lib/rack/sendfile.rb:107:in `call'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.3/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.3/lib/action_dispatch/middleware/show_exceptions.rb:46:in `call'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/railties-3.0.3/lib/rails/rack/logger.rb:13:in `call'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/rack-1.2.1/lib/rack/runtime.rb:17:in `call'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/activesupport-3.0.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/rack-1.2.1/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.3/lib/action_dispatch/middleware/static.rb:30:in `call'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/railties-3.0.3/lib/rails/application.rb:168:in `call'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/railties-3.0.3/lib/rails/application.rb:77:in `method_missing'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/railties-3.0.3/lib/rails/rack/log_tailer.rb:14:in `call'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+/Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/rack-1.2.1/lib/rack/handler/webrick.rb:52:in `service'
+/Users/shuchton/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+/Users/shuchton/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+/Users/shuchton/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+Rendered pages/home.html.erb within layouts/application (70.4ms)
+Completed   in 138ms
+
+ActionView::Template::Error (/Users/shuchton/rails_projects/Events2/app/views/layouts/application.html.erb:17: unknown regexp options - ct
+unmatched close parenthesis: /div>
+');		 end 
+@output_buffer.safe_concat('        ');@output_buffer.append= ( yield );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('      </i
+/Users/shuchton/rails_projects/Events2/app/views/layouts/application.html.erb:18: syntax error, unexpected tIDENTIFIER, expecting ')'
+...uffer.append= ( render 'layouts/footer' );@output_buffer.saf...
+...                               ^
+/Users/shuchton/rails_projects/Events2/app/views/layouts/application.html.erb:18: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...pend= ( render 'layouts/footer' );@output_buffer.safe_concat...
+...                               ^
+/Users/shuchton/rails_projects/Events2/app/views/layouts/application.html.erb:21: unknown regexp options - bdy
+/Users/shuchton/rails_projects/Events2/app/views/layouts/application.html.erb:22: syntax error, unexpected '<'
+</html>
+ ^
+/Users/shuchton/rails_projects/Events2/app/views/layouts/application.html.erb:22: unterminated regexp meets end of file):
+    14: 			<div class="flash <%= key %>"><%= value %></div>
+    15: 		<% end %>
+    16:         <%= yield %>
+    17:       </section>
+    18: 	  <%= render 'layouts/footer' %>
+    19: 	  <%= debug(params) if Rails.env.development? %>
+    20:     </div>
+  
+
+Rendered /Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.8ms)
+Rendered /Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-03-04 11:07:39 -0800
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered layouts/_header.html.erb (1.6ms)
+Rendered layouts/_footer.html.erb (0.7ms)
+Rendered pages/home.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 79ms (Views: 17.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/blueprint/screen.css" for 127.0.0.1 at 2011-03-04 11:07:39 -0800
+
+ActionController::RoutingError (No route matches "/stylesheets/blueprint/screen.css"):
+  
+
+Rendered /Users/shuchton/.rvm/gems/ruby-1.9.2-p180@rails3tutorial/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.2ms)

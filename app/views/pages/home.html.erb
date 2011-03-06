@@ -1,9 +1,9 @@
-<h1>Events</h1>
+<h1>Welcome to the Events homepage!</h1>
 
 <% if current_user %>
 	<td class="main">
 		<p>
-			Welcome back to Events.
+			Welcome back to Events, we missed you while you were away!  Did you miss us?  Of course you did!
 		</p>
 	</td>
 	<td class="sidebar round">
@@ -13,8 +13,11 @@
 <% else %>
 
 	<p>
-		This is the home page for the Events app
+		Hi there!  Feeling guilty about something you did, or something you didn't do?  Well then Events is the place for you.  Here you can participate in events all around your local area and experience karmic improvement while beautifying your local community and helping others.
 	</p>
+	<p> Events are posted here by people of all walks of life around your community or educational institution.  Each Event has many tasks, and you can complete as many or as few of them as you like.  Each one will require you to follow some simple instructions and then provide the proof that your task was completed.  Once your proof has been reviewed by a team of experts you will be credited with some points.  Points?!? Hooray!  See if you can get the most points and reach nirvana!
+	</p>
+	<h1>Click Below To Get Started!!</h1>
 
 <%= link_to "Sign up now!", signup_path, :class => "signup_button round" %>
 <% end %>

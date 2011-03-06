@@ -11,6 +11,6 @@ module ApplicationHelper
   end
   
   def logo
-    image_tag("nps.jpg", :alt => "Events!", :class => "round")
+    image_tag("munnkey.jpg", :alt => "Events!", :class => "round")
   end
 end

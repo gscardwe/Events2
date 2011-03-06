@@ -3,7 +3,8 @@
 }
 
 body {
-  background: #667a72;
+	
+  background: url('../images/clouds.jpg');
 }
 
 header {
@@ -24,6 +25,7 @@ section {
 
 section h1 {
   font-size: 200%;
+  text-align: center;
 }
 
 /* Links */

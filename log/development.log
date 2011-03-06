@@ -26030,3 +26030,140 @@ Completed 200 OK in 265ms (Views: 192.8ms | ActiveRecord: 2.0ms)
  FROM sqlite_master
  WHERE type = 'table' AND NOT name = 'sqlite_sequence'
   [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateRelationships (20110216174208)
+Migrating to CreateUserSessions (20110224004248)
+Migrating to CreateUsers (20110224163509)
+Migrating to CreateEvents (20110227054156)
+Migrating to AddZipToEvents (20110227180331)
+Migrating to AddLatLongToRelationship (20110304193719)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("events")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_info('index_events_on_user_id')[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("relationships")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_info('index_relationships_on_follower_id')[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_info('index_relationships_on_follower_id_and_followed_id')
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_info('index_relationships_on_followed_id')[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("user_sessions")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
+
+
+Started GET "/" for 127.0.0.1 at 2011-03-05 21:08:28 -0800
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered layouts/_header.html.erb (1.5ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered pages/home.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 250ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2011-03-05 21:08:33 -0800
+  Processing by UserSessionsController#new as HTML
+Rendered user_sessions/_form.html.erb (3.5ms)
+Rendered layouts/_stylesheets.html.erb (1.1ms)
+Rendered layouts/_header.html.erb (2.2ms)
+Rendered layouts/_footer.html.erb (0.7ms)
+Rendered user_sessions/new.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 79ms (Views: 20.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user_sessions" for 127.0.0.1 at 2011-03-05 21:08:49 -0800
+  Processing by UserSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"95Xw+QbtMM1160/SmLApp7yG1cSpTD4eRDAIr0UcDyk=", "user_session"=>{"username"=>"shuchton", "password"=>"[FILTERED]"}, "commit"=>"Submit"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE (LOWER("users".username) = 'shuchton') LIMIT 1[0m
+Rendered user_sessions/_form.html.erb (31.8ms)
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered layouts/_header.html.erb (2.3ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered user_sessions/new.html.erb within layouts/application (43.4ms)
+Completed 200 OK in 255ms (Views: 48.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-03-05 21:08:56 -0800
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered layouts/_header.html.erb (1.5ms)
+Rendered layouts/_footer.html.erb (0.7ms)
+Rendered pages/home.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 84ms (Views: 14.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2011-03-05 21:08:58 -0800
+  Processing by UsersController#new as HTML
+Rendered shared/_error_messages.html.erb (1.3ms)
+Rendered layouts/_stylesheets.html.erb (1.2ms)
+Rendered layouts/_header.html.erb (11.7ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered users/new.html.erb within layouts/application (77.1ms)
+Completed 200 OK in 140ms (Views: 110.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2011-03-05 21:09:09 -0800
+  Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"95Xw+QbtMM1160/SmLApp7yG1cSpTD4eRDAIr0UcDyk=", "user"=>{"username"=>"shuchton", "email"=>"shuchton@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('shuchton@gmail.com')) LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users"."id" FROM "users" WHERE (LOWER("users"."username") = LOWER('shuchton')) LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users"."id" FROM "users" WHERE ("users"."persistence_token" = '82ac1db1d744152574c582f5f6ff5a8322e3c3e69ff0426e5bac9de09573f59663bdf0b26c3ca62f88e800e48dd6aac3817c9f59ba806812ea5b612d95f0f64f') LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('shuchton@gmail.com')) LIMIT 1
+  [1m[36mAREL (0.4ms)[0m  [1mINSERT INTO "users" ("username", "email", "crypted_password", "password_salt", "persistence_token", "created_at", "updated_at", "admin") VALUES ('shuchton', 'shuchton@gmail.com', '4477f7c589ab9928f9b68c011e6c3b8d1e1551b291fbc53c8e48df80e3036273eaa7ebda689e0895630054fb0bc3543863a72500fda0ec5196f77db28c743390', 'uo8dUQKl1TY0k9OpGtnc', '82ac1db1d744152574c582f5f6ff5a8322e3c3e69ff0426e5bac9de09573f59663bdf0b26c3ca62f88e800e48dd6aac3817c9f59ba806812ea5b612d95f0f64f', '2011-03-06 05:09:10.118208', '2011-03-06 05:09:10.118208', NULL)[0m
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 419ms
+
+
+Started GET "/users/1" for 127.0.0.1 at 2011-03-05 21:09:10 -0800
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."persistence_token" = '82ac1db1d744152574c582f5f6ff5a8322e3c3e69ff0426e5bac9de09573f59663bdf0b26c3ca62f88e800e48dd6aac3817c9f59ba806812ea5b612d95f0f64f') LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."persistence_token" = '82ac1db1d744152574c582f5f6ff5a8322e3c3e69ff0426e5bac9de09573f59663bdf0b26c3ca62f88e800e48dd6aac3817c9f59ba806812ea5b612d95f0f64f') LIMIT 1[0m
+DEPRECATION WARNING: before_validation_on_create is deprecated. Please use before_validation(arguments, :on => :create. (called from acts_as_mappable at /Users/shuchton/rails_projects/Events2/vendor/plugins/geokit-rails/lib/geokit-rails/acts_as_mappable.rb:91)
+  [1m[35mEvent Load (0.3ms)[0m  SELECT "events".* FROM "events" WHERE ("events".user_id = 1) ORDER BY events.created_at DESC LIMIT 30 OFFSET 0
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "events" WHERE ("events".user_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "events" WHERE ("events".user_id = 1)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) FROM "events" INNER JOIN "relationships" ON "events".id = "relationships".followed_id WHERE (("relationships".follower_id = 1))[0m
+Rendered shared/_stats.html.erb (17.2ms)
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered layouts/_header.html.erb (2.6ms)
+Rendered layouts/_footer.html.erb (0.7ms)
+Rendered users/show.html.erb within layouts/application (72.3ms)
+Completed 200 OK in 203ms (Views: 76.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2011-03-05 21:09:17 -0800
+  Processing by PagesController#about as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."persistence_token" = '82ac1db1d744152574c582f5f6ff5a8322e3c3e69ff0426e5bac9de09573f59663bdf0b26c3ca62f88e800e48dd6aac3817c9f59ba806812ea5b612d95f0f64f') LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered layouts/_header.html.erb (92.4ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered pages/about.html.erb within layouts/application (99.8ms)
+Completed 200 OK in 105ms (Views: 104.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2011-03-05 21:09:21 -0800
+  Processing by PagesController#contact as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."persistence_token" = '82ac1db1d744152574c582f5f6ff5a8322e3c3e69ff0426e5bac9de09573f59663bdf0b26c3ca62f88e800e48dd6aac3817c9f59ba806812ea5b612d95f0f64f') LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered layouts/_header.html.erb (90.9ms)
+Rendered layouts/_footer.html.erb (0.8ms)
+Rendered pages/contact.html.erb within layouts/application (98.4ms)
+Completed 200 OK in 104ms (Views: 102.5ms | ActiveRecord: 0.9ms)

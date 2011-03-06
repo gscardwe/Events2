@@ -13,11 +13,12 @@ Events::Application.routes.draw do
   resources :users
 
   resources :events
-  resources :relationships, :only => [:create, :destroy]
+  resources :relationships
   
   match '/signup',  :to => 'users#new'
   match '/login',  :to => 'user_sessions#new'
   match '/logout', :to => 'user_sessions#destroy'
+  match '/following', :to => 'users#following'
   
   match '/create',  :to => 'events#new'
   match '/allevents',   :to => 'events#index'
@@ -25,7 +26,8 @@ Events::Application.routes.draw do
   match '/contact', :to => 'pages#contact'
   match '/about',   :to => 'pages#about'
   match '/help',    :to => 'pages#help'
-    
+  match '/tasks', :to => 'users#task'
+  
   root :to => "pages#home"
 
 

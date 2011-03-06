@@ -10,6 +10,7 @@
         <%= will_paginate @users %>
       <% end %>
     </td>
+
     <td class="sidebar round">
       <strong>Name</strong> <%= @user.username %><br />
       <strong>URL</strong> <%= link_to user_path(@user), @user %><br />

@@ -1,0 +1,14 @@
+<table class="profile" summary="Profile information">
+  <tr>
+    <td class="main">
+	 <%= render @events %>
+
+    </td>
+    <td class="sidebar round">
+      <strong>Name</strong> <%= @user.username %><br />
+      <strong>URL</strong>  <%= link_to user_path(@user), @user %><br />
+	  <strong>Events</strong> <%= @user.events.count %>
+	  <%= render 'shared/stats' %>
+    </td>
+  </tr>
+</table>

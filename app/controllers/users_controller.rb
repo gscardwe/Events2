@@ -84,6 +84,22 @@ class UsersController < ApplicationController
     end
   end
   
+  def task
+    @title = "Tasks"
+    @user  = current_user
+    @event = Event.find(params[:id])
+    @relationship = Relationship.find_by_follower_id_and_followed_id(@user.id, params[:id])
+    @location = [@event.street, @event.city,@event.state, @event.zip]
+    @location = @location.join(',')
+    @address = Geokit::Geocoders::GoogleGeocoder.geocode @location
+    @b = @relationship.latitude && @relationship.longitude
+        
+    respond_to do |format|
+      format.html { render :action => 'task'}
+      format.json { render :json => @address }
+    end
+  end
+  
   private
 
     def admin_user

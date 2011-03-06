@@ -104,7 +104,7 @@ class EventsController < ApplicationController
     @event = Event.find(params[:id])
     @events = @event.followers.paginate(:page => params[:page])
     respond_to do |format|
-     format.html
+     format.html 
      format.json { render :json => @events}
     end
   end

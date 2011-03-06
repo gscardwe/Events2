@@ -33,5 +33,8 @@ class User < ActiveRecord::Base
     relationships.find_by_followed_id(followed).destroy
   end
 
+  def tasked?(followed)
+    relationships.find_by_followed_id(followed)
+  end
   
 end

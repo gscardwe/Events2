@@ -5,12 +5,19 @@
     <span class="timestamp">
       Posted <%= time_ago_in_words(event.created_at) %> ago.
     </span>
+	<% if current_user.following?(event.id) %>
+	<td>
+		<%= link_to "Task status", {:controller => "users", :action => "task", :id => event.id} %>
+	</td>
+	<% end %>
   	<% if current_user?(event.user) %>
   	<td>
     	<%= link_to "delete", event,     :method => :delete,
                                      	 :confirm => "You sure?",
                                      	 :title => event.name %>
   	</td>
+
   	<% end %>
+
   </table>
 </tr>

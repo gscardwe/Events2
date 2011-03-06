@@ -1,0 +1,35 @@
+<h1><%= Event %></h1>
+
+<p>
+  <b>Name:</b>
+  <%= @event.name %>
+</p>
+<p>
+  <b>Description:</b>
+  <%= @event.description %>
+</p>
+<p>
+  <b>Address:</b>
+  <%= @event.street %>
+  <%= @event.city %>
+  <%= @event.state %>
+</p>
+<p>
+	<b>Target Lat/Long</b>
+	<%= @event.latitude%>
+	<%= @event.longitude%>
+</p>
+<h1><%= @title %></h1>
+<p>
+  <b>Your Location:</b>
+  <% if @relationship.latitude == nil %>
+   <b> YOU HAVEN'T BEEN THERE, HAVE YOU??!! </b>
+  <% else %>
+  <%= @relationship.latitude %>
+  <%= @relationship.longitude %>
+  <%= @address.distance_to(@b) %>
+  <b> Miles </b>
+  <% end %>
+</p>
+
+<%= link_to "Photos", tasks_path %>
